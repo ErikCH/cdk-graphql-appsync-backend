@@ -25,8 +25,6 @@ export const handler = async (event: AppSyncResolverEvent<AppSyncEvent>) => {
       contentType: "application/json",
     });
     const value = JSON.parse(response.body.transformToString());
-    console.log(value.completion);
-    console.log(`\nStop reason: ${value.stop_reason}`);
     return value.completion;
   } catch (err) {
     console.log(err);
