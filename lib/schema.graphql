@@ -1,0 +1,11 @@
+type Note
+  @model
+  @auth(rules: [{ allow: owner }, { allow: public, operations: [read] }]) {
+  name: String!
+  completed: Boolean!
+  owner: String @auth(rules: [{ allow: owner, operations: [read, delete] }])
+}
+
+type Query {
+  noteSummary(msg: String): String @function(name: "noteSummary")
+}
