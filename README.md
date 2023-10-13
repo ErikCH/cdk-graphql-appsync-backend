@@ -1,14 +1,33 @@
-# Welcome to your CDK TypeScript project
+# Welcome to CDK Appsync GraphQL API With Typescript
 
-This is a blank project for CDK development with TypeScript.
+This project shows how to setup an AppSync notes application using CDK, that connect to a direct lambda resolver that connects to Bedrock.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Getting started
 
-## Useful commands
+To deploy this project, follow these steps.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+1. Clone the project
+
+```sh
+git clone
+```
+
+2. Change into the directory and install dependencies
+
+```sh
+cd cdk-graphql-backend
+
+npm install
+```
+
+3. Run the build
+
+```sh
+npm run build
+```
+
+4. Deploy the stack
+
+```sh
+cdk deploy
+```
