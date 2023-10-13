@@ -9,7 +9,7 @@ To deploy this project, follow these steps.
 1. Clone the project
 
 ```sh
-git clone
+git clone https://github.com/ErikCH/cdk-graphql-appsync-backend
 ```
 
 2. Change into the directory and install dependencies
