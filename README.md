@@ -1,6 +1,8 @@
 # Welcome to CDK Appsync GraphQL API With Typescript
 
-This project shows how to setup an AppSync notes application using CDK, that connect to a direct lambda resolver that connects to Bedrock.
+This project shows how to setup an AppSync notes application using CDK, and Cognito that connects uses a direct lambda resolver that connects to Bedrock.
+
+For full instructions follow the this [Blog Post](https://aws.amazon.com/blogs/mobile/building-scalable-graphql-apis-on-aws-with-cdk-and-aws-appsync/).
 
 ## Getting started
 
@@ -15,7 +17,7 @@ git clone https://github.com/ErikCH/cdk-graphql-appsync-backend
 2. Change into the directory and install dependencies
 
 ```sh
-cd cdk-graphql-backend
+cd cdk-graphql-appsync-backend
 
 npm install
 ```
@@ -25,8 +27,6 @@ npm install
 ```sh
 npm run build
 ```
-
-4. Deploy the stack
 
 ```sh
 cdk deploy

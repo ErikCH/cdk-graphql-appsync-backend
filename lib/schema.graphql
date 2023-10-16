@@ -7,5 +7,7 @@ type Note
 }
 
 type Query {
-  noteSummary(msg: String): String @function(name: "noteSummary")
+  noteSummary(msg: String): String
+    @function(name: "noteSummary")
+    @auth(rules: [{ allow: private }])
 }
